@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>For My Favorite Person 💗</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- LOADING SCREEN -->
+    <!-- ========================= -->
+
+    <div id="loadingScreen">
+
+        <div class="loadingHeart">
+            💗
+        </div>
+
+        <h2>Preparing Something Special...</h2>
+
+        <p>Please wait...</p>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- FLOATING HEARTS -->
+    <!-- ========================= -->
+
+    <div class="hearts"></div>
+
+    <!-- ========================= -->
+    <!-- NAVIGATION -->
+    <!-- ========================= -->
+
+    <nav>
+
+        <div class="logo">
+
+            💗 My Favorite Person
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#letter">
+                    Letter
+                </a>
+            </li>
+
+            <li>
+                <a href="#gallery">
+                    Gallery
+                </a>
+            </li>
+
+            <li>
+                <a href="#relax">
+                    Relax
+                </a>
+            </li>
+
+            <li>
+                <a href="#surprise">
+                    Surprise
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ========================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================= -->
+
+    <section
+        id="home"
+        class="hero">
+
+        <div class="glassCard">
+
+            <h1>
+
+                🌸
+                For My Favorite Person
+                🌸
+
+            </h1>
+
+            <p>
+
+                Hi Langga 💕
+
+                <br><br>
+
+                I know you've been so tired lately.
+
+                So I made this little website just for you.
+
+                I hope this can make you smile,
+
+                even if it's just for a few minutes.
+
+            </p>
+
+            <div class="bigHeart">
+
+                ❤️
+
+            </div>
+
+            <button
+                class="mainButton"
+                onclick="showLetter()">
+
+                💌 Read My Letter
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- LOVE MENU -->
+    <!-- ========================= -->
+
+    <section
+        class="menu">
+
+        <div class="menuCard"
+            onclick="showLetter()">
+
+            💌
+
+            <h3>
+
+                Love Letter
+
+            </h3>
+
+            <p>
+
+                Read a special message.
+
+            </p>
+
+        </div>
+
+        <div class="menuCard"
+            onclick="showHug()">
+
+            🤗
+
+            <h3>
+
+                Virtual Hug
+
+            </h3>
+
+            <p>
+
+                A warm hug for you.
+
+            </p>
+
+        </div>
+
+        <div class="menuCard"
+            onclick="makeCoffee()">
+
+            ☕
+
+            <h3>
+
+                Coffee Break
+
+            </h3>
+
+            <p>
+
+                Time to relax.
+
+            </p>
+
+        </div>
+
+        <div class="menuCard"
+            onclick="moodChecker()">
+
+            🌸
+
+            <h3>
+
+                Mood Check
+
+            </h3>
+
+            <p>
+
+                Tell me how you feel.
+
+            </p>
+
+        </div>
+
+        <div class="menuCard"
+            onclick="breathing()">
+
+            🌙
+
+            <h3>
+
+                Relax
+
+            </h3>
+
+            <p>
+
+                Take a deep breath.
+
+            </p>
+
+        </div>
+
+        <div class="menuCard"
+            onclick="surprise()">
+
+            🎁
+
+            <h3>
+
+                Secret Surprise
+
+            </h3>
+
+            <p>
+
+                Click me!
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- POPUP MESSAGE -->
+    <!-- ========================= -->
+
+    <div
+        id="popup"
+        class="popup">
+
+        <div
+            class="popupContent">
+
+            <span
+                class="close"
+                onclick="closePopup()">
+
+                &times;
+
+            </span>
+
+            <div
+                id="popupBody">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <!-- ========================= -->
+    <!-- LOVE LETTER SECTION -->
+    <!-- ========================= -->
+
+    <section id="letter" class="section">
+
+        <h2>💌 A Letter For You 💌</h2>
+
+        <div class="letterCard">
+
+            <p id="typewriter">
+
+                haii langga lydell, please always remember nga ikaw ra jud akong gusto, mingaw ko saimoha da, gusto pa kaayo nako iprove akong self sa imoha, not just by saying things pero pinaagi sa akong actions, gusto nako ipakita nimo nga seryoso ko nimo and nga ikaw akong gipili, i want to pursue you, kay dili man ko ganahan nga kutob ra ko diri, naa gani ko diri nga willing mag-court nimo kay gusto nako nga ma-feel nimo nga naa koy effort and intention para sa atoa, dili ko gusto nga mahimong temporary ra ko sa life nimo, gusto nako nga mahimong someone nga makapakita nimo nga worth it gihapon mag-stay, hehe naa koy mga plano para sa atoa, mga bagay nga gusto nako ma-achieve nato together, i know dili perfect ang tanan and naa tay mga struggles, pero gusto nako nga sabay nato na ma overcome.
+
+
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- PHOTO GALLERY -->
+    <!-- ========================= -->
+
+    <section id="gallery" class="section">
+
+        <h2>📸 Our Happy Memories</h2>
+
+        <p class="galleryText">
+            Replace these pictures with your favorite photos together.
+        </p>
+
+        <div class="gallery">
+
+            <div class="photo">
+                <img src="images/photo1.jpg" alt="">
+            </div>
+
+            <div class="photo">
+                <img src="images/photo2.jpg" alt="">
+            </div>
+
+            <div class="photo">
+                <img src="images/photo3.jpg" alt="">
+            </div>
+
+         <div class="photo">
+                <img src="images/photo4.jpg" alt="">
+            </div>
+
+         <div class="photo">
+                <img src="images/photo5.jpg" alt="">
+            </div>
+
+         <div class="photo">
+                <img src="images/photo6.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- QUOTES -->
+    <!-- ========================= -->
+
+    <section class="section">
+
+        <h2>🌸 Daily Reminder 🌸</h2>
+
+        <div class="quoteBox">
+
+            <h3 id="quote">
+
+                You're doing amazing today.
+
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- RELAX SECTION -->
+    <!-- ========================= -->
+
+    <section
+        id="relax"
+        class="section">
+
+        <h2>
+
+            🌙 Relax Time
+
+        </h2>
+
+        <div class="relaxButtons">
+
+            <button onclick="breathing()">
+
+                🌸 Breathing Exercise
+
+            </button>
+
+            <button onclick="makeCoffee()">
+
+                ☕
+
+                Coffee Break
+
+            </button>
+
+            <button onclick="showHug()">
+
+                🤗
+
+                Send Me A Hug
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- MUSIC PLAYER -->
+    <!-- ========================= -->
+
+    <section class="section">
+
+        <h2>
+
+            🎵 Relaxing Music
+
+        </h2>
+
+        <p>
+
+            Add your favorite relaxing MP3 inside the music folder.
+
+        </p>
+
+        <audio controls>
+
+            <source
+                src="music/relaxing.mp3"
+                type="audio/mpeg">
+
+        </audio>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- SURPRISE -->
+    <!-- ========================= -->
+
+    <section
+        id="surprise"
+        class="section">
+
+        <h2>
+
+            🎁 Final Surprise
+
+        </h2>
+
+        <button
+            class="surpriseBtn"
+            onclick="surprise()">
+
+            Click Me ❤️
+
+        </button>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <h2>
+
+            💗
+
+            Thank You
+
+            💗
+
+        </h2>
+
+        <p>
+
+            If you're reading this...
+
+            I just want you to know
+
+            that I'm really proud of you.
+
+        </p>
+
+        <p>
+
+            Please don't forget to rest,
+
+            smile,
+
+            and always take care of yourself.
+
+        </p>
+
+        <h3>
+
+            Lovelove kita langga
+
+        </h3>
+
+    </footer>
+
+    <!-- Scroll Button -->
+
+    <button
+        id="topButton"
+        onclick="scrollToTop()">
+
+        ⬆
+
+    </button>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
